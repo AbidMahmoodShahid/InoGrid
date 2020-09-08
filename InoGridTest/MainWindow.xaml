@@ -30,10 +30,10 @@
                     BorderThickness="1"
                     Grid.IsSharedSizeScope="True">
             
-            <Label Content="Testing Row One" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <TextBox  VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <Label Content="Testing Row Two" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <CheckBox  VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Label Content="Testing Row One"/>
+            <TextBox />
+            <Label Content="Testing Row Two"/>
+            <CheckBox/>
 
             <IG:InoGridItem Label="Testing TextBox">
                 <TextBox Text="Testing TextBox" />

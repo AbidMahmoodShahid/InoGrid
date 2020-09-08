@@ -18,6 +18,13 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <local:InoGridPanel local:AP.Columns="2"/>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
 
     </Style>
 

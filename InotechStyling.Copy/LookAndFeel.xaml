@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:InotechStyling.Copy">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Colors/Colors.xaml" />
+        <ResourceDictionary Source="Colors/Brushes.xaml" />
+        <ResourceDictionary Source="Colors/ControlColors.xaml" />
+        <ResourceDictionary Source="Colors/ControlBrushes.xaml" />
+        <ResourceDictionary Source="Styles/Button.xaml" />
+        <ResourceDictionary Source="Styles/CheckBox.xaml" />
+        <ResourceDictionary Source="Styles/RadioButton.xaml" />
+        <ResourceDictionary Source="Styles/ComboBox.xaml" />
+        <ResourceDictionary Source="Styles/TextBox.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  Default styles  -->
+    <Style BasedOn="{StaticResource ButtonStyle}" TargetType="Button" />
+    <Style BasedOn="{StaticResource CheckBoxStyle}" TargetType="CheckBox" />
+    <Style BasedOn="{StaticResource ComboBoxStyle}" TargetType="ComboBox" />
+    <Style BasedOn="{StaticResource RadioButtonStyle}" TargetType="RadioButton" />
+    <Style BasedOn="{StaticResource TextBoxStyle}" TargetType="TextBox" />
+
+</ResourceDictionary>

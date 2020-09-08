@@ -1,0 +1,449 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:base="clr-namespace:InotechStyling.Copy"
+                    xmlns:local="clr-namespace:InotechStyling.Copy.Colors">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/InotechStyling.Copy;component/Colors/Colors.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  =========================================General Colors=========================================  -->
+    <base:InoStaticResourceExtension x:Key="ColorControlTransparent" ResourceKey="ColorTransparent" />
+    <base:InoStaticResourceExtension x:Key="ColorControlBlack" ResourceKey="ColorBlack" />
+    <base:InoStaticResourceExtension x:Key="ColorControlWhite" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorControlRed" ResourceKey="ColorRed" />
+    <base:InoStaticResourceExtension x:Key="ColorControlYellow" ResourceKey="ColorYellow" />
+    <!--  ================Foreground Colors================  -->
+    <base:InoStaticResourceExtension x:Key="ColorControlForegroundDark" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorControlForegroundBright" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorControlItemsControlForeground" ResourceKey="ColorAccentDark" />
+    <!--  ================Background Colors================  -->
+    <base:InoStaticResourceExtension x:Key="ColorControlWindowBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorControlItemsControlBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorGridSplitterBackground" ResourceKey="ColorAccent" />
+    <!--  ================Bordercolor Style================  -->
+    <base:InoStaticResourceExtension x:Key="ColorSeperatorBordercolor" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorGroupBoxBordercolor" ResourceKey="ColorAccent" />
+
+    <!--  =========================================Button Controls=========================================  -->
+    <!--  Controls: Button, Togglebutton, Combobox, Sliderthumb,  SliderBar  -->
+    <!--  ColorButtonBrownColor  -->
+    <base:InoStaticResourceExtension x:Key="ColorButtonStroke" ResourceKey="ColorButtonBrownColor" />
+    <!--  Control Enabled Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorButtonForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorButtonBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorSliderBackground" ResourceKey="TransparentColor" />
+    <base:InoStaticResourceExtension x:Key="ColorSliderTicks" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorButtonBordercolor" ResourceKey="ColorAccent" />
+    <!--  Control Disabled Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorButtonDisabledForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorButtonDisabledBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorButtonDisabledBordercolor" ResourceKey="ColorBaseDark" />
+    <!--  Control Mouse Over Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorButtonMouseOverForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorButtonMouseOverBackground" ResourceKey="ColorAccentBright" />
+    <base:InoStaticResourceExtension x:Key="ColorButtonMouseOverBordercolor" ResourceKey="ColorAccent" />
+    <!--  Control Clicked Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorButtonClickedForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorButtonClickedBackground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorButtonClickedBordercolor" ResourceKey="ColorAccent" />
+
+    <!--  =========================================Textbox Controls=========================================  -->
+    <!--  Controls: Textbox, Passwordbox, Combobox  -->
+    <!--  Control Enabled Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorTextboxForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorTextboxBackground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorTextboxBordercolor" ResourceKey="ColorBaseDark" />
+    <!--  Control Disabled Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorTextboxDisabledForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorTextboxDisabledBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorTextboxDisabledBordercolor" ResourceKey="ColorBaseDark" />
+    <!--  Control Mouse Over Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorTextboxMouseOverForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorTextboxMouseOverBackground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorTextboxMouseOverBordercolor" ResourceKey="ColorBaseDark" />
+    <!--  Control Selection Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorTextboxSelectionBackground" ResourceKey="ColorAccentBright" />
+
+    <!--  =========================================Selection Controls=========================================  -->
+    <!--  Controls: Checkbox, Radiobutton  -->
+    <!--  Control Enabled Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorSelectionControlsForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorSelectionControlsBackground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorSelectionControlsBordercolor" ResourceKey="ColorAccentDark" />
+    <!--  Control Disabled Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorSelectionControlsDisabledBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorSelectionControlsDisabledBordercolor" ResourceKey="ColorBaseDark" />
+    <!--  Control Mouse Overlay Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorSelectionControlsMouseOverBackground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorSelectionControlsMouseOverBordercolor" ResourceKey="ColorAccentDark" />
+    <!--  Control Clicked Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorSelectionControlsClickedBackground" ResourceKey="ColorAccentBright" />
+    <base:InoStaticResourceExtension x:Key="ColorSelectionControlsClickedBordercolor" ResourceKey="ColorAccent" />
+
+    <!--  =========================================Listbox Style=========================================  -->
+    <!--  Controls ListboxItem Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorListboxItemForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorListboxItemSelectedForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorListboxItemMouseOverForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorListboxItemBackground" ResourceKey="ColorTransparent" />
+    <base:InoStaticResourceExtension x:Key="ColorListboxItemSelectedBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorListboxItemMouseOverBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorListboxItemBordercolor" ResourceKey="ColorTransparent" />
+    <!--  Controls Listbox Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorListboxBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorListboxBordercolor" ResourceKey="ColorTransparent" />
+    <!--  Control Disabled Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorListboxDisabledForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorListboxDisabledBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorListboxDisabledBordercolor" ResourceKey="ColorBaseBright" />
+    <!--  Control Mouse Over Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorListboxMouseOverBackground" ResourceKey="ColorAccentBright" />
+    <!--  Control IsSelected Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorListboxIsSelectedBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorListboxIsSelectedForeground" ResourceKey="ColorWhite" />
+
+    <!--  =========================================Treeview Style=========================================  -->
+    <!--  Controls: Treeview  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorTreeviewItemIsSelectedForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorTreeviewDisabledForeground" ResourceKey="ColorAccentDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorTreeviewItemIsSelectedBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorTreeviewBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorTreeviewDisabledBackground" ResourceKey="ColorBaseBright" />
+    <!--  Bordercolors  -->
+
+    <!--  =========================================Progressbar Style=========================================  -->
+    <!--  Controls: Progressbar  -->
+    <!--  Foreground Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorProgressbarForeground" ResourceKey="ColorAccentBright" />
+    <!--  Bordercolor Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorProgressbarBordercolor" ResourceKey="ColorAccent" />
+    <!--  Animation Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorProgressbarAnimationDark" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorProgressbarAnimationLight" ResourceKey="ColorAccentBright" />
+
+    <!--  =========================================Tabcontrol Style=========================================  -->
+    <!--  Controls: Tabcontrol  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorHeaderForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorHeaderIsMouseOverForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorHeaderIsSelectedForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorHeaderIsDisabledForeground" ResourceKey="ColorAccentDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorHeaderBackground" ResourceKey="ColorBase" />
+    <base:InoStaticResourceExtension x:Key="ColorHeaderIsMouseOverBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorHeaderIsSelectedBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorHeaderIsDisabledBackground" ResourceKey="ColorBaseDark" />
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorTabControlBordercolor" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorHeaderBordercolor" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorHeaderIsSelectedBordercolor" ResourceKey="ColorAccent" />
+
+    <!--  =========================================Toolbar Style=========================================  -->
+    <!--  Controls: Toolbar  -->
+    <base:InoStaticResourceExtension x:Key="ColorToolbarThumbDrawing" ResourceKey="ColorAccentDark" />
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorToolbarForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarButtonForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarTextboxDisabledForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarOverflowButtonForeground" ResourceKey="ColorBlack" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarOverflowButtonIsCheckedForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarOverflowButtonIsDisabledForeground" ResourceKey="ColorAccentDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorToolbarTrayBackground" ResourceKey="TransparentColor" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarBackground" ResourceKey="ColorBase" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarTextboxBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarTextboxDisabledBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarOverflowButtonIsMouseOverBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarOverflowButtonIsKeyboardFocusedBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarOverflowButtonIsCheckedBackground" ResourceKey="ColorBaseDark" />
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorToolbarBordercolor" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarTextboxBordercolor" ResourceKey="ColorAccentBright" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarTextboxDisabledBordercolor" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarOverflowButtonIsMouseOverBordercolor" ResourceKey="TransparentColor" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarOverflowButtonIsKeyboardFocusedBordercolor" ResourceKey="TransparentColor" />
+    <base:InoStaticResourceExtension x:Key="ColorToolbarOverflowButtonIsCheckedBordercolor" ResourceKey="ColorBaseDark" />
+
+    <!--  =========================================Oxy Plot Style=========================================  -->
+    <!--  Controls: Oxy Plot  -->
+    <base:InoStaticResourceExtension x:Key="ColorOxyPlotZoomBackground" ResourceKey="ColorDiagramYellow" />
+    <base:InoStaticResourceExtension x:Key="ColorOxyPlotZoomBordercolor" ResourceKey="ColorBlack" />
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorOxyPlotForeground" ResourceKey="ColorAccentDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorOxyPlotBackground" ResourceKey="ColorBaseBright" />
+
+    <!--  =========================================IconFontBox Style=========================================  -->
+    <!--  Controls: IconFontBox  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorIconFontBoxForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorIconFontBoxSelectedForeground" ResourceKey="ColorBase" />
+
+    <!--  =========================================ListView Style=========================================  -->
+    <!--  Controls: ListView  -->
+    <!--  Manche Colors falsch verwendet  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorListViewColumnHeaderForeground" ResourceKey="ColorForegroundBright" />
+    <base:InoStaticResourceExtension x:Key="ColorListViewItemIsSelectedForeground" ResourceKey="ColorForegroundBright" />
+    <base:InoStaticResourceExtension x:Key="ColorListViewItemDisabledForeground" ResourceKey="ColorForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorListViewBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorListViewtColumnHeaderGripperBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorListViewColumnHeaderBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorListViewColumnHeaderClickedBackground" ResourceKey="ColorAccentBright" />
+    <base:InoStaticResourceExtension x:Key="ColorListViewColumnHeaderDisabledBackground" ResourceKey="ColorBaseDark" />
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorListViewBordercolor" ResourceKey="ColorAccentBright" />
+    <base:InoStaticResourceExtension x:Key="ColorListViewItemIsSelectedBordercolor" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorListViewItemBordercolor" ResourceKey="ColorForegroundDark" />
+    <!--  Not effecting the control  -->
+    <base:InoStaticResourceExtension x:Key="ColorListViewItemDisabledBordercolor" ResourceKey="ColorForegroundDark" />
+    <base:InoStaticResourceExtension x:Key="ColorListViewDisabledBordercolor" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorListViewColumnHeaderBordercolor" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorListViewColumnHeaderDisabledBordercolor" ResourceKey="ColorBaseDark" />
+
+    <!--  =========================================DocumentViewer Style=========================================  -->
+    <!--  Controls: DocumentViewer  -->
+    <!--  Color foreground and Bordercolor falsch verwendet  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorDocumentForeground" ResourceKey="ColorForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorDocumentBackground" ResourceKey="ColorTransparent" />
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorDocumentBordercolor" ResourceKey="ColorPink" />
+
+    <!--  =========================================Frame Style=========================================  -->
+    <!--  Controls: Frame  -->
+    <!--  Back/Forward Button Style  -->
+    <base:InoStaticResourceExtension x:Key="ColorFrameButtonBaseBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorFrameButtonBaseBordercolor" ResourceKey="ColorBaseDark" />
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorForwardButtonForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorForwardButtonDisabledForeground" ResourceKey="ColorForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorForwardButtonBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorForwardButtonMouseOverBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorForwardButtonClickedBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorForwardButtonDisabledBackground" ResourceKey="ColorBaseBright" />
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorForwardButtonBordercolor" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorForwardButtonClickedBordercolor" ResourceKey="ColorAccentBright" />
+    <!--  Frame MenuHeader Style  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorMenuItemButtonForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorMenuItemButtonDisabledForeground" ResourceKey="ColorForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorMenuItemButtonBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorMenuItemButtonOpenBackground" ResourceKey="ColorBaseDark" />
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorMenuItemButtonBordercolor" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorMenuItemButtonOpenBordercolor" ResourceKey="ColorAccentBright" />
+
+    <!--  =========================================Statusbar Style=========================================  -->
+    <!--  Controls: Statusbar  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorStatusBarDisabledForeground" ResourceKey="ColorForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorStatusBarBackground" ResourceKey="ColorBase" />
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorStatusBarBordercolor" ResourceKey="ColorBaseDark" />
+
+    <!--  =========================================Scrollbar Style=========================================  -->
+    <!--  Controls: Scrollbar  -->
+    <!--  LineButton  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorScrollbarLineButtonForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorScrollbarLineButtonDisabledForeground" ResourceKey="ColorForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorScrollbarLineButtonBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorScrollbarLineButtonClickedBackground" ResourceKey="ColorBaseDark" />
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorScrollbarLineButtonBordercolor" ResourceKey="ColorAccent" />
+    <!--  ScrollBarThumbTemplate  -->
+    <base:InoStaticResourceExtension x:Key="ColorScrollbarThumbBackground" ResourceKey="ColorBase" />
+    <base:InoStaticResourceExtension x:Key="ColorScrollbarThumbBordercolor" ResourceKey="ColorAccentDark" />
+    <!--  HorizontalScrollBarTemplate  -->
+    <base:InoStaticResourceExtension x:Key="ColorHorizontalScrollbarThumbBackground" ResourceKey="ColorBase" />
+    <base:InoStaticResourceExtension x:Key="ColorHorizontalScrollbarThumbBordercolor" ResourceKey="ColorAccentDark" />
+
+    <!--  =========================================DataGrid Style=========================================  -->
+    <!--  Controls: ColorDataGrid  -->
+    <!--  Falsch verwendet  -->
+    <base:InoStaticResourceExtension x:Key="ColorDataGridBordercolor" ResourceKey="ColorBase" />
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorDataGridForegroundDark" ResourceKey="ColorForegroundDark" />
+    <base:InoStaticResourceExtension x:Key="ColorDataGridForegroundBright" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorDataGridForegroundRed" ResourceKey="ColorRed" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorDataGridBackgroundBaseBright" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorDataGridBackgroundBaseDark" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorDataGridBackgroundAccent" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorDataGridBackgroundAccentBright" ResourceKey="ColorAccentBright" />
+    <base:InoStaticResourceExtension x:Key="ColorDataGridBackgroundAccentDark" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorDataGridBackgroundWhite" ResourceKey="ColorWhite" />
+    <!--  Bordercolor  -->
+    <base:InoStaticResourceExtension x:Key="ColorDataGridDisabledGridlines" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorDataGridBordercolorAccentBright" ResourceKey="ColorAccentBright" />
+    <base:InoStaticResourceExtension x:Key="ColorDataGridBordercolorBaseBright" ResourceKey="ColorBaseBright" />
+
+    <!--  =========================================Navigation Window Style=========================================  -->
+    <!--  Controls: Navigation Window  -->
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowButtonBaseBackground" ResourceKey="ColorBaseDark" />
+    <!--  Back/Forward Button Style  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowForwardButtonForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowForwardButtonDisabledForeground" ResourceKey="ColorForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowForwardButtonBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowForwardButtonMouseOverBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowForwardButtonClickedBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowForwardButtonDisabledBackground" ResourceKey="ColorBaseDark" />
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowForwardButtonBordercolor" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowForwardButtonClickedBordercolor" ResourceKey="ColorAccentBright" />
+    <!--  Menu Header Style  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowDropDownButtonForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowDropDownButtonDisabledForeground" ResourceKey="ColorForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowDropDownButtonBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowDropDownButtonIsSubMenuOpenBackground" ResourceKey="ColorBaseDark" />
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowDropDownButtonBordercolor" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowDropDownButtonIsSubMenuOpenBordercolor" ResourceKey="ColorAccentBright" />
+    <!--  Menu Item Style  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowMenuItemForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowMenuItemIsHighlightedForeground" ResourceKey="ColorWhite" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorNavigationWindowMenuItemIsHighlightedBackground" ResourceKey="ColorAccent" />
+    <!--  Bordercolors  -->
+
+    <!--  =========================================POP-UPS=========================================  -->
+    <!--  Controls: ContextMenu, Tooltips, MenuPopup, Combobox  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorPopupForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupMouseOverForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupIsSelectedForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorComboboxDisabledForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupSubmenuHeaderForeground" ResourceKey="ColorPopupForeground" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupSubmenuItemForeground" ResourceKey="ColorPopupForeground" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupSubMenuItemIsHighlightedForeground" ResourceKey="ColorPopupMouseOverForeground" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupSubMenuItemDisabledForeground" ResourceKey="ColorBaseDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorPopupBackgroundDark" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupBackgroundBright" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupMouseOverBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupIsSelectedBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupSubMenuBackground" ResourceKey="ColorPopupBackgroundDark" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupSubMenuItemIsHighlightedBackground" ResourceKey="ColorPopupMouseOverBackground" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupIsDisabledBackground" ResourceKey="ColorBaseDark" />
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorPopupItemSeperator" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupBordercolorColor" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupBordercolorColorBright" ResourceKey="ColorAccentBright" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupBordercolorColorDark" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupBordercolorDark" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorPopupSubMenuBordercolor" ResourceKey="ColorPopupBordercolorDark" />
+
+    <!--  =========================================Expander Style=========================================  -->
+    <!--  Controls: Expander  -->
+    <base:InoStaticResourceExtension x:Key="ColorExpanderForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorExpanderBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorExpanderContentBackground" ResourceKey="ColorBase" />
+    <base:InoStaticResourceExtension x:Key="ColorExpanderBordercolor" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorExpanderContentBordercolor" ResourceKey="ColorAccentBright" />
+    <!--  Control Disabled Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorExpanderDisabledForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorExpanderDisabledBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorExpanderContentDisabledBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorExpanderDisabledBordercolor" ResourceKey="ColorBaseDark" />
+    <!--  Control Mouse Over Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorExpanderMouseOverBackground" ResourceKey="ColorAccentBright" />
+    <!--  Control IsChecked Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorExpanderIsCheckedBackground" ResourceKey="ColorAccentDark" />
+
+    <!--  =========================================Combobox Controls=========================================  -->
+    <!--  Controls: Combobox, Datepicker, Colorpicker  -->
+    <!--  Control Normal Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorCBButtonForeground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorCBButtonBackground" ResourceKey="ColorGrayBlue" />
+    <base:InoStaticResourceExtension x:Key="ColorCBButtonBordercolor" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorCBTextboxForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorCBTextboxBackground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorCBTextboxBordercolor" ResourceKey="ColorBaseDark" />
+    <!--  Control Disabled Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorCBButtonDisabledForeground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorCBButtonDisabledBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorCBButtonDisabledBordercolor" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorCBTextboxDisabledForeground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorCBTextboxDisabledBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorCBTextboxDisabledBordercolor" ResourceKey="ColorBaseDark" />
+    <!--  Control Mouse Over Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorCBButtonMouseOverForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorCBButtonMouseOverBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorCBButtonMouseOverBordercolor" ResourceKey="ColorAccent" />
+    <!--  Control IsChecked Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorCBButtonIsCheckedForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorCBButtonIsCheckedBackground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorCBButtonIsCheckedBordercolor" ResourceKey="ColorAccentDark" />
+
+    <!--  =========================================DatePickerButton Icon Style=========================================  -->
+    <!--  Controls: DatePickerButton Icon  -->
+    <!--  DatePickerButton Icon  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorDatepickerIconForeground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorDatepickerIconIsPressedForeground" ResourceKey="ColorAccentBright" />
+    <base:InoStaticResourceExtension x:Key="ColorDatepickerIconDisabledForeground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorDatepickerIconHeaderIsPressedForeground" ResourceKey="ColorWhite" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorDatepickerIconBackground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorDatepickerIconDisabledBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorDatepickerIconHeaderBackground" ResourceKey="ColorGrayBlue" />
+    <base:InoStaticResourceExtension x:Key="ColorDatepickerIconHeaderDisabledBackground" ResourceKey="ColorBase" />
+    <!--  BorderColors  -->
+    <base:InoStaticResourceExtension x:Key="ColorDatepickerIconIsPressedBordercolor" ResourceKey="ColorAccentBright" />
+
+    <!--  =========================================Calender Style=========================================  -->
+    <!--  Controls: Calender  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorCalendarForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorCalendarHeaderForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorCalendarHeaderMouseOverForeground" ResourceKey="ColorAccentBright" />
+    <base:InoStaticResourceExtension x:Key="ColorCalendarInactiveForeground" ResourceKey="ColorBaseDark" />
+
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorCalendarBackground" ResourceKey="ColorBaseBright" />
+    <base:InoStaticResourceExtension x:Key="ColorCalendarHeaderBackground" ResourceKey="ColorAccent" />
+    <base:InoStaticResourceExtension x:Key="ColorCalendarCurrentDayBackground" ResourceKey="ColorAccentBright" />
+    <base:InoStaticResourceExtension x:Key="ColorCalendarSelectedBackground" ResourceKey="ColorBaseDark" />
+    <base:InoStaticResourceExtension x:Key="ColorCalendarMouseOverBackground" ResourceKey="ColorBaseDark" />
+
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorCalendarBordercolor" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorCalendarInnerBordercolor" ResourceKey="ColorBaseDark" />
+
+    <!--  =========================================Menu Style=========================================  -->
+    <!--  Controls: Menu  -->
+    <!--  Foreground Colors  -->
+    <base:InoStaticResourceExtension x:Key="ColorMenuHeaderForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorMenuHeaderDisabledForeground" ResourceKey="ColorWhite" />
+    <base:InoStaticResourceExtension x:Key="ColorMenuHeaderIsHighlightedForeground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorTopLevelItemDisabledForeground" ResourceKey="ColorAccentDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="ColorMenuBackground" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorMenuHeaderIsHighlightedBackground" ResourceKey="ColorBase" />
+    <base:InoStaticResourceExtension x:Key="ColorTopLevelItemIsHighlightedBackground" ResourceKey="ColorBaseDark" />
+    <!--  Unused Button  -->
+    <base:InoStaticResourceExtension x:Key="ColorMenuButtonStyleBackground" ResourceKey="ColorAccentDark" />
+    <!--  Bordercolors  -->
+    <base:InoStaticResourceExtension x:Key="ColorMenuBordercolor" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorMenuHeaderIsHighlightedBordercolor" ResourceKey="ColorAccentDark" />
+    <base:InoStaticResourceExtension x:Key="ColorTopLevelItemIsHighlightedBordercolor" ResourceKey="ColorAccentDark" />
+
+</ResourceDictionary>

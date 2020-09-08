@@ -1,0 +1,449 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:base="clr-namespace:InotechStyling.Copy"
+                    xmlns:local="clr-namespace:InotechStyling.Copy.Colors">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/InotechStyling.Copy;component/Colors/Brushes.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  =========================================General Brushes=========================================  -->
+    <base:InoStaticResourceExtension x:Key="BrushControlTransparent" ResourceKey="BrushTransparent" />
+    <base:InoStaticResourceExtension x:Key="BrushControlBlack" ResourceKey="BrushBlack" />
+    <base:InoStaticResourceExtension x:Key="BrushControlWhite" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushControlRed" ResourceKey="BrushRed" />
+    <base:InoStaticResourceExtension x:Key="BrushControlYellow" ResourceKey="BrushYellow" />
+    <!--  ================Foreground Brushes================  -->
+    <base:InoStaticResourceExtension x:Key="BrushControlForegroundDark" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushControlForegroundBright" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushControlItemsControlForeground" ResourceKey="BrushAccentDark" />
+    <!--  ================Background Brushes================  -->
+    <base:InoStaticResourceExtension x:Key="BrushControlWindowBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushControlItemsControlBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushGridSplitterBackground" ResourceKey="BrushAccent" />
+    <!--  ================Borderbrush Style================  -->
+    <base:InoStaticResourceExtension x:Key="BrushSeperatorBorderbrush" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushGroupBoxBorderbrush" ResourceKey="BrushAccent" />
+
+    <!--  =========================================Button Controls=========================================  -->
+    <!--  Controls: Button, Togglebutton, Combobox, Sliderthumb, SliderBar  -->
+    <!--  ColorButtonBrownColor  -->
+    <base:InoStaticResourceExtension x:Key="BrushButtonStroke" ResourceKey="BrushButtonBrownColor" />
+    <!--  Control Enabled Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushButtonForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushButtonBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushSliderBackground" ResourceKey="BrushTransparent" />
+    <base:InoStaticResourceExtension x:Key="BrushSliderTicks" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushButtonBorderbrush" ResourceKey="BrushAccent" />
+    <!--  Control Disabled Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushButtonDisabledForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushButtonDisabledBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushButtonDisabledBorderbrush" ResourceKey="BrushBaseDark" />
+    <!--  Control Mouse Over Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushButtonMouseOverForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushButtonMouseOverBackground" ResourceKey="BrushAccentBright" />
+    <base:InoStaticResourceExtension x:Key="BrushButtonMouseOverBorderbrush" ResourceKey="BrushAccent" />
+    <!--  Control Clicked Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushButtonClickedForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushButtonClickedBackground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushButtonClickedBorderbrush" ResourceKey="BrushAccent" />
+
+    <!--  =========================================Textbox Controls=========================================  -->
+    <!--  Controls: Textbox, Passwordbox, Combobox  -->
+    <!--  Control Enabled Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushTextboxForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushTextboxBackground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushTextboxBorderbrush" ResourceKey="BrushBaseDark" />
+    <!--  Control Disabled Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushTextboxDisabledForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushTextboxDisabledBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushTextboxDisabledBorderbrush" ResourceKey="BrushBaseDark" />
+    <!--  Control Mouse Over Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushTextboxMouseOverForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushTextboxMouseOverBackground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushTextboxMouseOverBorderbrush" ResourceKey="BrushBaseDark" />
+    <!--  Control Selection Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushTextboxSelectionBackground" ResourceKey="BrushAccentBright" />
+
+    <!--  =========================================Selection Controls=========================================  -->
+    <!--  Controls: Checkbox, Radiobutton  -->
+    <!--  Control Enabled Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushSelectionControlsForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushSelectionControlsBackground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushSelectionControlsBorderbrush" ResourceKey="BrushAccentDark" />
+    <!--  Control Disabled Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushSelectionControlsDisabledBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushSelectionControlsDisabledBorderbrush" ResourceKey="BrushBaseDark" />
+    <!--  Control Mouse Overlay Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushSelectionControlsMouseOverBackground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushSelectionControlsMouseOverBorderbrush" ResourceKey="BrushAccentDark" />
+    <!--  Control Clicked Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushSelectionControlsClickedBackground" ResourceKey="BrushAccentBright" />
+    <base:InoStaticResourceExtension x:Key="BrushSelectionControlsClickedBorderbrush" ResourceKey="BrushAccent" />
+
+    <!--  =========================================Listbox Style=========================================  -->
+    <!--  Controls ListboxItem Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushListboxItemForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushListboxItemSelectedForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushListboxItemMouseOverForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushListboxItemBackground" ResourceKey="BrushTransparent" />
+    <base:InoStaticResourceExtension x:Key="BrushListboxItemSelectedBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushListboxItemMouseOverBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushListboxItemBorderbrush" ResourceKey="BrushTransparent" />
+    <!--  Controls Listbox Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushListboxBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushListboxBorderbrush" ResourceKey="BrushTransparent" />
+    <!--  Control Disabled Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushListboxDisabledForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushListboxDisabledBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushListboxDisabledBorderbrush" ResourceKey="BrushBaseBright" />
+    <!--  Control Mouse Over Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushListboxMouseOverBackground" ResourceKey="BrushAccentBright" />
+    <!--  Control IsSelected Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushListboxIsSelectedBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushListboxIsSelectedForeground" ResourceKey="BrushWhite" />
+
+    <!--  =========================================Treeview Style=========================================  -->
+    <!--  Controls: Treeview  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushTreeviewArrow" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushTreeviewDisabledArrow" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushTreeviewItemIsSelectedForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushTreeviewDisabledForeground" ResourceKey="BrushAccentDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushTreeviewItemIsSelectedBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushTreeviewBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushTreeviewDisabledBackground" ResourceKey="BrushBaseBright" />
+    <!--  Borderbrushes  -->
+
+    <!--  =========================================Progressbar Style=========================================  -->
+    <!--  Controls: Progressbar  -->
+    <!--  Foreground Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushProgressbarForeground" ResourceKey="BrushAccentBright" />
+    <!--  Borderbrush Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushProgressbarBorderbrush" ResourceKey="BrushAccent" />
+    <!--  Animation Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushProgressbarAnimationDark" ResourceKey="BrushDarkCyan" />
+    <base:InoStaticResourceExtension x:Key="BrushProgressbarAnimationLight" ResourceKey="BrushLightCyan" />
+
+    <!--  =========================================Tabcontrol Style=========================================  -->
+    <!--  Controls: Tabcontrol  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushHeaderForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushHeaderIsMouseOverForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushHeaderIsSelectedForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushHeaderIsDisabledForeground" ResourceKey="BrushAccentDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushHeaderBackground" ResourceKey="BrushBase" />
+    <base:InoStaticResourceExtension x:Key="BrushHeaderIsMouseOverBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushHeaderIsSelectedBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushHeaderIsDisabledBackground" ResourceKey="BrushBaseDark" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushTabControlBorderbrush" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushHeaderBorderbrush" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushHeaderIsSelectedBorderbrush" ResourceKey="BrushAccent" />
+
+    <!--  =========================================Toolbar Style=========================================  -->
+    <!--  Controls: Toolbar  -->
+    <base:InoStaticResourceExtension x:Key="BrushToolbarThumbDrawing" ResourceKey="BrushAccentDark" />
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushToolbarForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarButtonForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarTextboxDisabledForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarOverflowButtonForeground" ResourceKey="BrushBlack" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarOverflowButtonIsCheckedForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarOverflowButtonIsDisabledForeground" ResourceKey="BrushAccentDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushToolbarTrayBackground" ResourceKey="BrushTransparent" />
+    <!--  BrushBaseDark  -->
+    <base:InoStaticResourceExtension x:Key="BrushToolbarBackground" ResourceKey="BrushBase" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarTextboxBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarTextboxDisabledBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarOverflowButtonIsMouseOverBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarOverflowButtonIsKeyboardFocusedBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarOverflowButtonIsCheckedBackground" ResourceKey="BrushBaseDark" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushToolbarBorderbrush" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarTextboxBorderbrush" ResourceKey="BrushAccentBright" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarTextboxDisabledBorderbrush" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarOverflowButtonIsMouseOverBorderbrush" ResourceKey="BrushTransparent" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarOverflowButtonIsKeyboardFocusedBorderbrush" ResourceKey="BrushTransparent" />
+    <base:InoStaticResourceExtension x:Key="BrushToolbarOverflowButtonIsCheckedBorderbrush" ResourceKey="BrushBaseDark" />
+
+    <!--  =========================================Oxy Plot Style=========================================  -->
+    <!--  Controls: Oxy Plot  -->
+    <base:InoStaticResourceExtension x:Key="BrushOxyPlotZoomBackground" ResourceKey="BrushDiagramYellow" />
+    <base:InoStaticResourceExtension x:Key="BrushOxyPlotZoomBorderbrush" ResourceKey="BrushBlack" />
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushOxyPlotForeground" ResourceKey="BrushAccentDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushOxyPlotBackground" ResourceKey="BrushBaseBright" />
+
+    <!--  =========================================IconFontBox Style=========================================  -->
+    <!--  Controls: IconFontBox  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushIconFontBoxForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushIconFontBoxSelectedForeground" ResourceKey="BrushBase" />
+
+    <!--  =========================================ListView Style=========================================  -->
+    <!--  Controls: ListView  -->
+    <!--  Manche Brushes falsch verwendet  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushListViewColumnHeaderForeground" ResourceKey="BrushForegroundBright" />
+    <base:InoStaticResourceExtension x:Key="BrushListViewItemIsSelectedForeground" ResourceKey="BrushForegroundBright" />
+    <base:InoStaticResourceExtension x:Key="BrushListViewItemDisabledForeground" ResourceKey="BrushForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushListViewBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushListViewtColumnHeaderGripperBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushListViewColumnHeaderBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushListViewColumnHeaderClickedBackground" ResourceKey="BrushAccentBright" />
+    <base:InoStaticResourceExtension x:Key="BrushListViewColumnHeaderDisabledBackground" ResourceKey="BrushBaseDark" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushListViewBorderbrush" ResourceKey="BrushAccentBright" />
+    <base:InoStaticResourceExtension x:Key="BrushListViewItemIsSelectedBorderbrush" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushListViewItemBorderbrush" ResourceKey="BrushForegroundDark" />
+    <!--  Not effecting the control  -->
+    <base:InoStaticResourceExtension x:Key="BrushListViewItemDisabledBorderbrush" ResourceKey="BrushForegroundDark" />
+    <base:InoStaticResourceExtension x:Key="BrushListViewDisabledBorderbrush" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushListViewColumnHeaderBorderbrush" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushListViewColumnHeaderDisabledBorderbrush" ResourceKey="BrushBaseDark" />
+
+    <!--  =========================================DocumentViewer Style=========================================  -->
+    <!--  Controls: DocumentViewer  -->
+    <!--  Brush foreground and Borderbrush falsch verwendet  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushDocumentForeground" ResourceKey="BrushForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushDocumentBackground" ResourceKey="BrushTransparent" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushDocumentBorderbrush" ResourceKey="BrushPink" />
+
+    <!--  =========================================Frame Style=========================================  -->
+    <!--  Controls: Frame  -->
+    <!--  Back/Forward Button Style  -->
+    <base:InoStaticResourceExtension x:Key="BrushFrameButtonBaseBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushFrameButtonBaseBorderbrush" ResourceKey="BrushBaseDark" />
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushForwardButtonForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushForwardButtonDisabledForeground" ResourceKey="BrushForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushForwardButtonBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushForwardButtonMouseOverBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushForwardButtonClickedBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushForwardButtonDisabledBackground" ResourceKey="BrushBaseBright" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushForwardButtonBorderbrush" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushForwardButtonClickedBorderbrush" ResourceKey="BrushAccentBright" />
+    <!--  Frame MenuHeader Style  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushMenuItemButtonForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushMenuItemButtonDisabledForeground" ResourceKey="BrushForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushMenuItemButtonBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushMenuItemButtonOpenBackground" ResourceKey="BrushBaseDark" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushMenuItemButtonBorderbrush" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushMenuItemButtonOpenBorderbrush" ResourceKey="BrushAccentBright" />
+
+    <!--  =========================================Statusbar Style=========================================  -->
+    <!--  Controls: Statusbar  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushStatusBarDisabledForeground" ResourceKey="BrushForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushStatusBarBackground" ResourceKey="BrushBase" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushStatusBarBorderbrush" ResourceKey="BrushBaseDark" />
+
+    <!--  =========================================Scrollbar Style=========================================  -->
+    <!--  Controls: Scrollbar  -->
+    <!--  LineButton  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushScrollbarLineButtonForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushScrollbarLineButtonDisabledForeground" ResourceKey="BrushForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushScrollbarLineButtonBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushScrollbarLineButtonClickedBackground" ResourceKey="BrushBaseDark" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushScrollbarLineButtonBorderbrush" ResourceKey="BrushAccent" />
+    <!--  ScrollBarThumbTemplate  -->
+    <base:InoStaticResourceExtension x:Key="BrushScrollbarThumbBackground" ResourceKey="BrushBase" />
+    <base:InoStaticResourceExtension x:Key="BrushScrollbarThumbBorderbrush" ResourceKey="BrushAccentDark" />
+    <!--  HorizontalScrollBarTemplate  -->
+    <base:InoStaticResourceExtension x:Key="BrushHorizontalScrollbarThumbBackground" ResourceKey="BrushBase" />
+    <base:InoStaticResourceExtension x:Key="BrushHorizontalScrollbarThumbBorderbrush" ResourceKey="BrushAccentDark" />
+
+    <!--  =========================================DataGrid Style=========================================  -->
+    <!--  Controls: DataGrid  -->
+    <!--  Falsch verwendet  -->
+    <base:InoStaticResourceExtension x:Key="BrushDataGridBorderbrush" ResourceKey="BrushBase" />
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushDataGridForegroundDark" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushDataGridForegroundBright" ResourceKey="BrushWhite" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushDataGridBackgroundBaseBright" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushDataGridBackgroundBaseDark" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushDataGridBackgroundAccent" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushDataGridBackgroundAccentBright" ResourceKey="BrushAccentBright" />
+    <base:InoStaticResourceExtension x:Key="BrushDataGridBackgroundAccentDark" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushDataGridBackgroundWhite" ResourceKey="BrushWhite" />
+    <!--  Borderbrush  -->
+    <base:InoStaticResourceExtension x:Key="BrushDataGridDisabledGridlines" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushDataGridBordercolorAccentBright" ResourceKey="BrushAccentBright" />
+    <base:InoStaticResourceExtension x:Key="BrushDataGridBordercolorBaseBright" ResourceKey="BrushBaseBright" />
+
+    <!--  =========================================Navigation Window Style=========================================  -->
+    <!--  Controls: Navigation Window  -->
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="NavigationWindowBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="NavigationWindowButtonBaseBackground" ResourceKey="BrushBaseDark" />
+    <!--  Back/Forward Button Style  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="NavigationWindowForwardButtonForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="NavigationWindowForwardButtonDisabledForeground" ResourceKey="BrushForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="NavigationWindowForwardButtonBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="NavigationWindowForwardButtonMouseOverBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="NavigationWindowForwardButtonClickedBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="NavigationWindowForwardButtonDisabledBackground" ResourceKey="BrushBaseDark" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="NavigationWindowForwardButtonBorderbrush" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="NavigationWindowForwardButtonClickedBorderbrush" ResourceKey="BrushAccentBright" />
+    <!--  Menu Header Style  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="NavigationWindowDropDownButtonForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="NavigationWindowDropDownButtonDisabledForeground" ResourceKey="BrushForegroundDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="NavigationWindowDropDownButtonBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="NavigationWindowDropDownButtonIsSubMenuOpenBackground" ResourceKey="BrushBaseDark" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="NavigationWindowDropDownButtonBorderbrush" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="NavigationWindowDropDownButtonIsSubMenuOpenBorderbrush" ResourceKey="BrushAccentBright" />
+    <!--  Menu Item Style  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="NavigationWindowMenuItemForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="NavigationWindowMenuItemIsHighlightedForeground" ResourceKey="BrushWhite" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="NavigationWindowMenuItemIsHighlightedBackground" ResourceKey="BrushAccent" />
+    <!--  Borderbrushes  -->
+
+    <!--  =========================================POP-UPS=========================================  -->
+    <!--  Controls: ContextMenu, Tooltips, MenuPopup, Combobox (TODO: Expander, Calender)  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushPopupForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupMouseOverForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupIsSelectedForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushComboboxDisabledForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupSubmenuHeaderForeground" ResourceKey="BrushPopupForeground" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupSubmenuItemForeground" ResourceKey="BrushPopupForeground" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupSubMenuItemIsHighlightedForeground" ResourceKey="BrushPopupMouseOverForeground" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupSubMenuItemDisabledForeground" ResourceKey="BrushBaseDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushPopupBackgroundDark" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupBackgroundBright" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupMouseOverBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupIsSelectedBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupSubMenuBackground" ResourceKey="BrushPopupBackgroundDark" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupSubMenuItemIsHighlightedBackground" ResourceKey="BrushPopupMouseOverBackground" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupIsDisabledBackground" ResourceKey="BrushBaseDark" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushPopupItemSeperator" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupBorderbrushColor" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupBorderbrushColorBright" ResourceKey="BrushAccentBright" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupBorderbrushColorDark" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupBorderbrushDark" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushPopupSubMenuBorderbrush" ResourceKey="BrushPopupBorderbrushDark" />
+
+    <!--  =========================================Expander Style=========================================  -->
+    <!--  Controls: Expander  -->
+    <base:InoStaticResourceExtension x:Key="BrushExpanderForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushExpanderBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushExpanderContentBackground" ResourceKey="BrushBase" />
+    <base:InoStaticResourceExtension x:Key="BrushExpanderBorderbrush" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushExpanderContentBorderbrush" ResourceKey="BrushAccentBright" />
+    <!--  Control Disabled Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushExpanderDisabledForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushExpanderDisabledBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushExpanderContentDisabledBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushExpanderDisabledBorderbrush" ResourceKey="BrushBaseDark" />
+    <!--  Control Mouse Over Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushExpanderMouseOverBackground" ResourceKey="BrushAccentBright" />
+    <!--  Control IsChecked Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushExpanderIsCheckedBackground" ResourceKey="BrushAccentDark" />
+
+    <!--  =========================================Combobox Controls=========================================  -->
+    <!--  Controls: Combobox, DatePicker, ColorPicker  -->
+    <!--  Control Normal Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushCBButtonForeground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushCBButtonBackground" ResourceKey="BrushGrayBlue" />
+    <base:InoStaticResourceExtension x:Key="BrushCBButtonBorderbrush" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushCBTextboxForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushCBTextboxBackground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushCBTextboxBorderbrush" ResourceKey="BrushBaseDark" />
+    <!--  Control Disabled Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushCBButtonDisabledForeground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushCBButtonDisabledBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushCBButtonDisabledBorderbrush" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushCBTextboxDisabledForeground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushCBTextboxDisabledBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushCBTextboxDisabledBorderbrush" ResourceKey="BrushBaseDark" />
+    <!--  Control Mouse Over Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushCBButtonMouseOverForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushCBButtonMouseOverBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushCBButtonMouseOverBorderbrush" ResourceKey="BrushAccent" />
+    <!--  Control IsChecked Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushCBButtonIsCheckedForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushCBButtonIsCheckedBackground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushCBButtonIsCheckedBorderbrush" ResourceKey="BrushAccentDark" />
+
+    <!--  =========================================DatePickerButton Icon Style=========================================  -->
+    <!--  Controls: DatePickerButton Icon  -->
+    <!--  DatePickerButton Icon  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushDatepickerIconForeground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushDatepickerIconIsPressedForeground" ResourceKey="BrushAccentBright" />
+    <base:InoStaticResourceExtension x:Key="BrushDatepickerIconDisabledForeground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushDatepickerIconHeaderIsPressedForeground" ResourceKey="BrushWhite" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushDatepickerIconBackground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushDatepickerIconDisabledBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushDatepickerIconHeaderBackground" ResourceKey="BrushGrayBlue" />
+    <base:InoStaticResourceExtension x:Key="BrushDatepickerIconHeaderDisabledBackground" ResourceKey="BrushBase" />
+    <!--  Borderbrush  -->
+    <base:InoStaticResourceExtension x:Key="BrushDatepickerIconIsPressedBorderbrush" ResourceKey="BrushAccentBright" />
+
+    <!--  =========================================Calender Style=========================================  -->
+    <!--  Controls: Calender  -->
+    <!--  Foregrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushCalendarForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushCalendarHeaderForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushCalendarHeaderMouseOverForeground" ResourceKey="BrushAccentBright" />
+    <base:InoStaticResourceExtension x:Key="BrushCalendarInactiveForeground" ResourceKey="BrushBaseDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushCalendarBackground" ResourceKey="BrushBaseBright" />
+    <base:InoStaticResourceExtension x:Key="BrushCalendarHeaderBackground" ResourceKey="BrushAccent" />
+    <base:InoStaticResourceExtension x:Key="BrushCalendarCurrentDayBackground" ResourceKey="BrushAccentBright" />
+    <base:InoStaticResourceExtension x:Key="BrushCalendarSelectedBackground" ResourceKey="BrushBaseDark" />
+    <base:InoStaticResourceExtension x:Key="BrushCalendarMouseOverBackground" ResourceKey="BrushBaseDark" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushCalendarBorderbrush" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushCalendarInnerBorderbrush" ResourceKey="BrushBaseDark" />
+
+    <!--  =========================================Menu Style=========================================  -->
+    <!--  Controls: Menu  -->
+    <!--  Foreground Brushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushMenuHeaderForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushMenuHeaderDisabledForeground" ResourceKey="BrushWhite" />
+    <base:InoStaticResourceExtension x:Key="BrushMenuHeaderIsHighlightedForeground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushTopLevelItemDisabledForeground" ResourceKey="BrushAccentDark" />
+    <!--  Backgrounds  -->
+    <base:InoStaticResourceExtension x:Key="BrushMenuBackground" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushMenuHeaderIsHighlightedBackground" ResourceKey="BrushBase" />
+    <base:InoStaticResourceExtension x:Key="BrushTopLevelItemIsHighlightedBackground" ResourceKey="BrushBaseDark" />
+    <!--  Unused Button  -->
+    <base:InoStaticResourceExtension x:Key="BrushMenuButtonStyleBackground" ResourceKey="BrushAccentDark" />
+    <!--  Borderbrushes  -->
+    <base:InoStaticResourceExtension x:Key="BrushMenuBorderbrush" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushMenuHeaderIsHighlightedBorderbrush" ResourceKey="BrushAccentDark" />
+    <base:InoStaticResourceExtension x:Key="BrushTopLevelItemIsHighlightedBorderbrush" ResourceKey="BrushAccentDark" />
+
+</ResourceDictionary>

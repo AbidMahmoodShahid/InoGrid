@@ -1,0 +1,78 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:inotechStyling.Copy.Colors">
+
+
+    <!--  Base Colors  -->
+    <Color x:Key="ColorBlack">#000000</Color>
+    <Color x:Key="ColorWhite">#FFFFFF</Color>
+    <Color x:Key="TransparentColor">Transparent</Color>
+
+
+    <!--  Style Colors  -->
+    <Color x:Key="ColorAccentDark">#113f67</Color>
+    <Color x:Key="ColorAccent">#34699a</Color>
+    <Color x:Key="ColorAccentBright">#408ab4</Color>
+    <Color x:Key="ColorGrayBlue">#A2BFD2</Color>
+    <Color x:Key="ColorDiagramYellow">#40FFFF00</Color>
+
+    <Color x:Key="ColorBaseDark">#aaaaaa</Color>
+    <Color x:Key="ColorBase">#dfe2e2</Color>
+    <Color x:Key="ColorBaseBright">#eeeeee</Color>
+
+
+    <!--  Signalfarben  -->
+    <Color x:Key="ColorRed">#FF0000</Color>
+    <Color x:Key="ColorRed90">#FF1919</Color>
+    <Color x:Key="ColorRed60">#FF6666</Color>
+    <Color x:Key="ColorRed30">#FFB2B2</Color>
+
+    <Color x:Key="ColorYellow">#FFFF00</Color>
+    <Color x:Key="ColorYellow90">#FFFF19</Color>
+    <Color x:Key="ColorYellow60">#FFFF66</Color>
+    <Color x:Key="ColorYellow30">#FFFFB2</Color>
+
+    <Color x:Key="ColorGreen">#00FF19</Color>
+    <Color x:Key="ColorGreen90">#19FF34</Color>
+    <Color x:Key="ColorGreen60">#66FF77</Color>
+    <Color x:Key="ColorGreen30">#B2FFBA</Color>
+
+    <Color x:Key="ColorSignalRed">#ff2b2b</Color>
+    <Color x:Key="ColorWarningRed">#ea4040</Color>
+    <Color x:Key="ColorSignalGreen">#13CE66</Color>
+    <Color x:Key="ColorWarningGreen">#26bb68</Color>
+    <Color x:Key="ColorSignalYellow">#FFC82C</Color>
+    <Color x:Key="ColorWarningYellow">#eabe41</Color>
+    <Color x:Key="ColorSignalBlue">#34699a</Color>
+
+
+    <!--  Schtiftfarben  -->
+    <Color x:Key="ColorForegroundBright">#FFFFFF</Color>
+    <Color x:Key="ColorForegroundDark">#113f67</Color>
+
+
+    <!--  Diagramfarben  -->
+    <Color x:Key="ColorDiagram1">#4F81BD</Color>
+    <Color x:Key="ColorDiagram2">#C0504D</Color>
+    <Color x:Key="ColorDiagram3">#9BBB59</Color>
+    <Color x:Key="ColorDiagram4">#8064A2</Color>
+    <Color x:Key="ColorDiagram5">#4BACC6</Color>
+    <Color x:Key="ColorDiagram6">#F79646</Color>
+
+    <Color x:Key="ColorDiagramSingleLine">#4F81BD</Color>
+    <Color x:Key="ColorDiagramLimit">#DB0000</Color>
+    <Color x:Key="ColorDiagramSectionSplitter">#969696</Color>
+    <Color x:Key="ColorDiagramMajorLine">#969696</Color>
+    <Color x:Key="ColorDiagramBorder">#000000</Color>
+    <Color x:Key="ColorDiagramNeutral1">#FF8C8C</Color>
+    <Color x:Key="ColorDiagramNeutral2">#5E9AE0</Color>
+
+    <!--  Added Colors  -->
+    <!--  Calendar Colors  -->
+    <Color x:Key="ColorDarkCharcoal">#FF333333</Color>
+    <Color x:Key="ColorDarkGray">#FF777777</Color>
+    <Color x:Key="ColorDisabledColor">#A5FFFFFF</Color>
+    <!--  Button Colors  -->
+    <Color x:Key="ColorButtonBrownColor">#60000000</Color>
+
+</ResourceDictionary>

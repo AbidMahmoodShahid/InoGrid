@@ -55,10 +55,6 @@
                 <RadioButton />
             </IG:InoGridItem>-->
 
-            <ItemsPanelTemplate>
-                <IG:InoGridPanel ChildMargin="20"/>
-            </ItemsPanelTemplate>
-
         </IG:InoGrid>
 
 

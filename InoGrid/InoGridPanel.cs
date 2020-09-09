@@ -105,7 +105,8 @@ namespace InoGrid
                 if (itemCount % 2 == 0)
                 {
                     double itemWidth = MaxColumnOneWidth - HorizontalMargin;
-                    double itemHeight = MaxRowHeight - VerticalMargin;
+                    //double itemHeight = MaxRowHeight - VerticalMargin;
+                    double itemHeight = child.DesiredSize.Height;
                     double itemOffsetWidth = ChildMargin;
                     double itemOffsetHeight = offsetHeight - ChildMargin + itemLocalOffsetHeight;
 
@@ -123,7 +124,8 @@ namespace InoGrid
                 if (itemCount % 2 != 0)
                 {
                     double itemWidth = AvailableColumnTwoWidth - HorizontalMargin;
-                    double itemHeight = MaxRowHeight - VerticalMargin;
+                    //double itemHeight = MaxRowHeight - VerticalMargin;
+                    double itemHeight = child.DesiredSize.Height;
                     double itemOffsetWidth = MaxColumnOneWidth;
                     double itemOffsetHeight = offsetHeight - ChildMargin + itemLocalOffsetHeight;
 

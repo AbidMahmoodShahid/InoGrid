@@ -54,7 +54,7 @@
                 <CheckBox />
             </IG:InoGridItem>
 
-            <IG:InoGridItem Label="Testinh ComboBox">
+            <IG:InoGridItem Label="Testing ComboBox">
                 <ComboBox />
             </IG:InoGridItem>
 

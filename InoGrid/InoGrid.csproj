@@ -82,5 +82,11 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InotechStyling.Copy\InotechStyling.Copy.csproj">
+      <Project>{2d2bf14f-349c-4c5b-a58c-321375046c54}</Project>
+      <Name>InotechStyling.Copy</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,7 +3,18 @@
                     xmlns:local="clr-namespace:InoGrid">
 
 
-    <Style TargetType="{x:Type local:InoGrid}">
+        <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="/inotechStyling.Copy;component/LookAndFeel.xaml" />
+        </ResourceDictionary.MergedDictionaries>
+
+
+    <Style x:Name="DefaultStyle" TargetType="{x:Type local:InoGrid}">
+
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="Background" Value="{StaticResource BrushBaseBright}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="BorderBrush" Value="{StaticResource BrushAccentDark}" />
 
         <Setter Property="Template">
             <Setter.Value>
@@ -15,13 +26,14 @@
                             BorderThickness="{TemplateBinding BorderThickness}">
                         <ScrollViewer VerticalScrollBarVisibility="Auto">
                             <Grid>
-                                <ItemsPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                                <ItemsPresenter />
                             </Grid>
                         </ScrollViewer>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>

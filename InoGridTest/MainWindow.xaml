@@ -9,6 +9,7 @@
         Width="800"
         Height="450"
         mc:Ignorable="d">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -22,28 +23,20 @@
                Content="Beispiel von InoGrid mit PS8 Styling"
                FontSize="18" />
 
-        <IG:InoGrid Grid.Row="1"
-                    Margin="10"
-                    Background="{StaticResource BrushBaseBright}"
-                    BorderBrush="{StaticResource BrushAccentDark}"
-                    BorderThickness="1"
-                    Grid.IsSharedSizeScope="True"
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Top"
-                    HorizontalContentAlignment="Left"
-                    VerticalContentAlignment="Center">
-            
-            <Label Content="Testing Row One"/>
-            <TextBox Text="Column One"/>
-            <Label Content="Testing Row Two"/>
-            <TextBox Text="Column Two"/>
-            <Label Content="Testing Row Three"/>
-            <TextBox Text="Column One"/>
-            <Label Content="Testing Row Four"/>
-            <TextBox Text="Column Two"/>
-            <Label Content="Testing Row Four"/>
+        <IG:InoGrid Grid.Row="1" Margin="10">
+
+            <Label Content="Testing Row One" />
+            <TextBox Text="Column One" />
+            <Label Content="Testing Row Two" />
+            <TextBox Text="Column Two" />
+            <Label Content="Testing Row Three" />
+            <TextBox Text="Column One" /> 
+            <!--  Width="100" Height="100" VerticalContentAlignment="Center" HorizontalAlignment="Left"  -->
+            <Label Content="Testing Row Four" />
+            <TextBox Text="Column Two" />
+            <Label Content="Testing Row Four" />
             <CheckBox />
-            <Label Content="Testing Row Four"/>
+            <Label Content="Testing Row Four" />
             <ComboBox />
 
             <!--<IG:InoGridItem Label="Testing TextBox">
@@ -62,8 +55,13 @@
                 <RadioButton />
             </IG:InoGridItem>-->
 
+            <ItemsPanelTemplate>
+                <IG:InoGridPanel ChildMargin="20"/>
+            </ItemsPanelTemplate>
+
         </IG:InoGrid>
-        
+
+
 
     </Grid>
 </Window>

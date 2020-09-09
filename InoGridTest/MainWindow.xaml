@@ -12,8 +12,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <Label Grid.Row="0"
@@ -28,14 +27,24 @@
                     Background="{StaticResource BrushBaseBright}"
                     BorderBrush="{StaticResource BrushAccentDark}"
                     BorderThickness="1"
-                    Grid.IsSharedSizeScope="True">
+                    Grid.IsSharedSizeScope="True"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Top"
+                    HorizontalContentAlignment="Left"
+                    VerticalContentAlignment="Center">
             
             <Label Content="Testing Row One"/>
-            <TextBox />
+            <TextBox Text="Column One"/>
             <Label Content="Testing Row Two"/>
-            <CheckBox/>
+            <TextBox Text="Column Two"/>
+            <Label Content="Testing Row Three"/>
+            <TextBox Text="Column One"/>
+            <Label Content="Testing Row Four"/>
+            <TextBox Text="Column Two"/>
+            <Label Content="Testing Row Four"/>
+            <CheckBox />
 
-            <IG:InoGridItem Label="Testing TextBox">
+            <!--<IG:InoGridItem Label="Testing TextBox">
                 <TextBox Text="Testing TextBox" />
             </IG:InoGridItem>
 
@@ -49,9 +58,10 @@
 
             <IG:InoGridItem Label="Testing RadioButton">
                 <RadioButton />
-            </IG:InoGridItem>
+            </IG:InoGridItem>-->
 
         </IG:InoGrid>
+        
 
     </Grid>
 </Window>

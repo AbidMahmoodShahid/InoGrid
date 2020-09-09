@@ -8,11 +8,13 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:InoGrid}">
-                    <Border Background="{TemplateBinding Background}"
+                    <Border HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalAlignment}"
+                            Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
-                        <Grid >
-                            <ItemsPresenter/>
+                        <Grid>
+                            <ItemsPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                         </Grid>
                     </Border>
                 </ControlTemplate>
@@ -40,14 +42,23 @@
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" SharedSizeGroup="Label" />
-                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10" />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <Border Grid.Column="0" Height="30" Margin="10,0,0,10">
-                                <ContentPresenter ContentSource="Label" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <Border Grid.Column="0"
+                                    Height="30"
+                                    Margin="10,0,0,10">
+                                <ContentPresenter HorizontalAlignment="Left"
+                                                  VerticalAlignment="Center"
+                                                  ContentSource="Label" />
                             </Border>
-                            <Border Grid.Column="2" Height="30" Margin="0,0,10,10">
-                                <ContentPresenter Grid.Column="1" ContentSource="Content" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                            <Border Grid.Column="2"
+                                    Height="30"
+                                    Margin="0,0,10,10">
+                                <ContentPresenter Grid.Column="1"
+                                                  HorizontalAlignment="Stretch"
+                                                  VerticalAlignment="Center"
+                                                  ContentSource="Content" />
                             </Border>
                         </Grid>
                     </Border>

@@ -10,90 +10,131 @@ namespace InoGrid
 {
     public class InoGridPanel : Panel
     {
-        public int Columns { get; set; }
+        #region Dependancy Property
 
-        // Default public constructor 
+        public int ChildMargin
+        {
+            get { return (int)GetValue(ChildMarginProperty); }
+            set { SetValue(ChildMarginProperty, value); }
+        }
+
+        public static readonly DependencyProperty ChildMarginProperty =
+            DependencyProperty.Register("ChildMargin", typeof(int), typeof(InoGridPanel), new PropertyMetadata(5));
+
+        #endregion
+
+
+        #region Properties
+
+        public int Rows { get; set; }
+        public double MaxRowHeight { get; set; }
+        public double HorizontalMargin { get; set; }
+        public double MaxColumnOneWidth { get; set; }
+        public double MaxColumnTwoWidth { get; set; }
+        public double AvailableColumnTwoWidth { get; set; }
+        public double VerticalMargin { get; set; }
+        public double PanelWidth { get; set; }
+        public double PanelHeight { get; set; }
+
+        #endregion
+
+
+        #region Constructor
+
         public InoGridPanel() : base()
         {
+
         }
+
+        #endregion
+
+
+        #region Measure and Arrange Method
 
         protected override Size MeasureOverride(Size availableSize)
         {
-            Size size = ArrangeAndMeasure(availableSize, true);
-            if (double.IsInfinity(availableSize.Height) || double.IsInfinity(availableSize.Width))
-                return size;
-            else
-                return availableSize;
-        }
 
-        protected override Size ArrangeOverride(Size finalSize)
-        {
-            return ArrangeAndMeasure(finalSize, false);
-        }
-
-        Size ArrangeAndMeasure(Size finalSize, bool isMeasure)
-        {
-            //if columns not specified set it value 2.
-            Columns = Columns == 0 ? 2 : Columns;
-            Size controlCurrentSize = new Size(0, 0);
-            double maxColumnOneWidth = 0.0;
+            Size panelSize = new Size(0, 0);
+            Rows = 0;
+            MaxRowHeight = 0;
+            HorizontalMargin = ChildMargin * 2;
+            MaxColumnOneWidth = 0;
+            MaxColumnTwoWidth = 0;
+            VerticalMargin = ChildMargin * 2;
+            PanelWidth = 0;
+            PanelHeight = 0;
             int itemCount = 0;
 
-            foreach (UIElement child in InternalChildren)
+            foreach (UIElement child in Children)
             {
-                //for all even itemcounts move to first column
+                //for all even (including 0) itemcounts move to first column
                 if (itemCount % 2 == 0)
-                {    
-                    controlCurrentSize.Width -= maxColumnOneWidth;
-                    if (maxColumnOneWidth < child.DesiredSize.Width)
-                        maxColumnOneWidth = child.DesiredSize.Width;
+                {
+                    child.Measure(availableSize);
+                    MaxColumnOneWidth = Math.Max(MaxColumnOneWidth, (child.DesiredSize.Width+ HorizontalMargin));
+                    MaxRowHeight = Math.Max(MaxRowHeight, (child.DesiredSize.Height + VerticalMargin));
+                    Rows++;
                 }
                 //for all odd itemcounts move to second column
                 if (itemCount % 2 != 0)
                 {
-                    controlCurrentSize.Width += maxColumnOneWidth;           
+                    child.Measure(availableSize);
+                    MaxColumnTwoWidth = Math.Max(MaxColumnTwoWidth, (child.DesiredSize.Width+ HorizontalMargin));
+                    MaxRowHeight = Math.Max(MaxRowHeight, (child.DesiredSize.Height+ VerticalMargin));
                 }
-
-                //Setting the location of the Element in the Control
-                if (isMeasure)
-                    child.Measure(finalSize);
-                else
-                    child.Arrange(new Rect(new Point(controlCurrentSize.Width, controlCurrentSize.Height), child.DesiredSize));
-
-                //increasing height of control for all even itemcounts
-                if (itemCount % 2 != 0)
-                {
-                    controlCurrentSize.Height += child.DesiredSize.Height;
-                }
-
                 itemCount++;
             }
-            return controlCurrentSize;
+            AvailableColumnTwoWidth = availableSize.Width - MaxColumnOneWidth;
+            PanelHeight = MaxRowHeight * Rows;
+            PanelWidth = MaxColumnOneWidth + MaxColumnTwoWidth;
+            panelSize = new Size(PanelWidth, PanelHeight);
+
+            return panelSize;
         }
+
+        protected override Size ArrangeOverride(Size finalSize)
+        {
+            double offsetHeight = ChildMargin;
+            int itemCount = 0;
+
+            foreach (UIElement child in Children)
+            {
+                //for all even (including 0) itemcounts move to first column
+                if (itemCount % 2 == 0)
+                {
+                    double itemWidth = MaxColumnOneWidth - HorizontalMargin;
+                    double itemHeight = MaxRowHeight - VerticalMargin;
+                    if (itemWidth < 0)
+                    {
+                        itemWidth = 0;
+                    }
+                    if (itemHeight < 0)
+                    {
+                        itemHeight = 0;
+                    }
+                    child.Arrange(new Rect(ChildMargin, offsetHeight, itemWidth, itemHeight));
+                }
+                //for all odd itemcounts move to second column
+                if (itemCount % 2 != 0)
+                {
+                    double itemWidth = AvailableColumnTwoWidth - HorizontalMargin;
+                    double itemHeight = MaxRowHeight - VerticalMargin;
+                    if(itemWidth<0)
+                    {
+                        itemWidth = 0;
+                    }
+                    if (itemHeight < 0)
+                    {
+                        itemHeight = 0;
+                    }
+                    child.Arrange(new Rect(MaxColumnOneWidth, offsetHeight, itemWidth, itemHeight));
+                    offsetHeight = offsetHeight + MaxRowHeight;
+                }
+                itemCount++;
+            }
+            return finalSize;
+        }
+
+        #endregion
     }
 }
-
-
-//protected override Size MeasureOverride(Size availableSize)
-//{
-//    Size mySize = new Size(0, 0);
-//    foreach (UIElement child in Children)
-//    {
-//        child.Measure(availableSize);
-//        mySize.Width += child.DesiredSize.Width;
-//        mySize.Height = Math.Max(mySize.Height, child.DesiredSize.Height);
-//    }
-
-//    return mySize;
-//}
-
-//protected override Size ArrangeOverride(Size finalSize)
-//{
-//    double offset = 0.0;
-//    foreach (UIElement child in Children)
-//    {
-//        child.Arrange(new Rect(offset, 0, child.DesiredSize.Width, finalSize.Height));
-//        offset += child.DesiredSize.Width;
-//    }
-//    return finalSize;
-//}

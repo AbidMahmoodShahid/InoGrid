@@ -95,15 +95,20 @@ namespace InoGrid
         protected override Size ArrangeOverride(Size finalSize)
         {
             double offsetHeight = ChildMargin;
+            double itemLocalOffsetHeight = 0;
             int itemCount = 0;
 
             foreach (UIElement child in Children)
             {
+                itemLocalOffsetHeight = (MaxRowHeight - child.DesiredSize.Height)/2;
                 //for all even (including 0) itemcounts move to first column
                 if (itemCount % 2 == 0)
                 {
                     double itemWidth = MaxColumnOneWidth - HorizontalMargin;
                     double itemHeight = MaxRowHeight - VerticalMargin;
+                    double itemOffsetWidth = ChildMargin;
+                    double itemOffsetHeight = offsetHeight - ChildMargin + itemLocalOffsetHeight;
+
                     if (itemWidth < 0)
                     {
                         itemWidth = 0;
@@ -112,14 +117,17 @@ namespace InoGrid
                     {
                         itemHeight = 0;
                     }
-                    child.Arrange(new Rect(ChildMargin, offsetHeight, itemWidth, itemHeight));
+                    child.Arrange(new Rect(itemOffsetWidth, itemOffsetHeight, itemWidth, itemHeight));
                 }
                 //for all odd itemcounts move to second column
                 if (itemCount % 2 != 0)
                 {
                     double itemWidth = AvailableColumnTwoWidth - HorizontalMargin;
                     double itemHeight = MaxRowHeight - VerticalMargin;
-                    if(itemWidth<0)
+                    double itemOffsetWidth = MaxColumnOneWidth;
+                    double itemOffsetHeight = offsetHeight - ChildMargin + itemLocalOffsetHeight;
+
+                    if (itemWidth<0)
                     {
                         itemWidth = 0;
                     }
@@ -127,7 +135,7 @@ namespace InoGrid
                     {
                         itemHeight = 0;
                     }
-                    child.Arrange(new Rect(MaxColumnOneWidth, offsetHeight, itemWidth, itemHeight));
+                    child.Arrange(new Rect(itemOffsetWidth, itemOffsetHeight, itemWidth, itemHeight));
                     offsetHeight = offsetHeight + MaxRowHeight;
                 }
                 itemCount++;

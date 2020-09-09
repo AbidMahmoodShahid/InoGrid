@@ -23,7 +23,7 @@
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>
-                    <local:InoGridPanel/>
+                    <local:InoGridPanel />
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>

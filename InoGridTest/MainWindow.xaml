@@ -43,6 +43,8 @@
             <TextBox Text="Column Two"/>
             <Label Content="Testing Row Four"/>
             <CheckBox />
+            <Label Content="Testing Row Four"/>
+            <ComboBox />
 
             <!--<IG:InoGridItem Label="Testing TextBox">
                 <TextBox Text="Testing TextBox" />

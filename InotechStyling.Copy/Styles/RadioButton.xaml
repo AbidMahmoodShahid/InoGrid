@@ -11,10 +11,11 @@
             <Setter.Value>
                 <ControlTemplate>
                     <Border>
-                        <Rectangle Margin="15,0,0,0"
-                                   Stroke="#60000000"
-                                   StrokeDashArray="1 2"
-                                   StrokeThickness="1" />
+                        <Rectangle
+                            Margin="15,0,0,0"
+                            Stroke="#60000000"
+                            StrokeDashArray="1 2"
+                            StrokeThickness="1" />
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
@@ -31,46 +32,53 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type RadioButton}">
-                    <Border Padding="{TemplateBinding Padding}"
-                            Background="{TemplateBinding Background}"
-                            BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}">
+                    <Border
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
                         <BulletDecorator Background="{StaticResource BrushControlTransparent}">
                             <BulletDecorator.Bullet>
                                 <Grid Width="13" Height="13">
-                                    <Ellipse x:Name="Border"
-                                             Fill="{StaticResource BrushControlWhite}"
-                                             Stroke="{TemplateBinding BorderBrush}"
-                                             StrokeThickness="1" />
+                                    <Ellipse
+                                        x:Name="Border"
+                                        Fill="{StaticResource BrushControlWhite}"
+                                        Stroke="{TemplateBinding BorderBrush}"
+                                        StrokeThickness="1" />
 
-                                    <Ellipse x:Name="MouseOverOverlay"
-                                             Fill="{StaticResource BrushSelectionControlsMouseOverBackground}"
-                                             Opacity="0.0"
-                                             Stroke="{StaticResource BrushSelectionControlsMouseOverBorderbrush}"
-                                             StrokeThickness="1" />
+                                    <Ellipse
+                                        x:Name="MouseOverOverlay"
+                                        Fill="{StaticResource BrushSelectionControlsMouseOverBackground}"
+                                        Opacity="0.0"
+                                        Stroke="{StaticResource BrushSelectionControlsMouseOverBorderbrush}"
+                                        StrokeThickness="1" />
 
-                                    <Ellipse x:Name="PressedOverlay"
-                                             Fill="{StaticResource BrushSelectionControlsClickedBackground}"
-                                             Opacity="0.0"
-                                             Stroke="{StaticResource BrushSelectionControlsClickedBorderbrush}"
-                                             StrokeThickness="1" />
+                                    <Ellipse
+                                        x:Name="PressedOverlay"
+                                        Fill="{StaticResource BrushSelectionControlsClickedBackground}"
+                                        Opacity="0.0"
+                                        Stroke="{StaticResource BrushSelectionControlsClickedBorderbrush}"
+                                        StrokeThickness="1" />
 
-                                    <Ellipse x:Name="DisabledOverlay"
-                                             Fill="{StaticResource BrushSelectionControlsDisabledBackground}"
-                                             Opacity="0.0"
-                                             Stroke="{StaticResource BrushSelectionControlsDisabledBorderbrush}"
-                                             StrokeThickness="1" />
+                                    <Ellipse
+                                        x:Name="DisabledOverlay"
+                                        Fill="{StaticResource BrushSelectionControlsDisabledBackground}"
+                                        Opacity="0.0"
+                                        Stroke="{StaticResource BrushSelectionControlsDisabledBorderbrush}"
+                                        StrokeThickness="1" />
 
-                                    <Ellipse x:Name="CheckMark"
-                                             Margin="4"
-                                             Fill="{StaticResource BrushSelectionControlsForeground}"
-                                             Visibility="Collapsed" />
+                                    <Ellipse
+                                        x:Name="CheckMark"
+                                        Margin="4"
+                                        Fill="{StaticResource BrushSelectionControlsForeground}"
+                                        Visibility="Collapsed" />
                                 </Grid>
                             </BulletDecorator.Bullet>
-                            <ContentPresenter Margin="4,0,0,0"
-                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                              RecognizesAccessKey="True" />
+                            <ContentPresenter
+                                Margin="4,0,0,0"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                RecognizesAccessKey="True" />
                         </BulletDecorator>
 
                         <VisualStateManager.VisualStateGroups>

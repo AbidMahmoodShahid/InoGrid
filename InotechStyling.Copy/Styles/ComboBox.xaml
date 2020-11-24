@@ -16,25 +16,28 @@
                             <ColumnDefinition Width="20" />
                         </Grid.ColumnDefinitions>
 
-                        <Border x:Name="Button"
-                                Grid.ColumnSpan="2"
-                                Background="{StaticResource BrushCBButtonBackground}"
-                                BorderBrush="{StaticResource BrushCBButtonBorderbrush}"
-                                BorderThickness="1"
-                                CornerRadius="2" />
-                        <Border x:Name="Textbox"
-                                Grid.Column="0"
-                                Margin="1"
-                                Background="{StaticResource BrushCBTextboxBackground}"
-                                BorderBrush="{StaticResource BrushCBTextboxBorderbrush}"
-                                BorderThickness="0,0,1,0"
-                                CornerRadius="2,0,0,2" />
-                        <Path x:Name="Arrow"
-                              Grid.Column="1"
-                              HorizontalAlignment="Center"
-                              VerticalAlignment="Center"
-                              Data="M 0 0 L 4 4 L 8 0 Z"
-                              Fill="{StaticResource BrushCBButtonForeground}" />
+                        <Border
+                            x:Name="Button"
+                            Grid.ColumnSpan="2"
+                            Background="{StaticResource BrushCBButtonBackground}"
+                            BorderBrush="{StaticResource BrushCBButtonBorderbrush}"
+                            BorderThickness="1"
+                            CornerRadius="2" />
+                        <Border
+                            x:Name="Textbox"
+                            Grid.Column="0"
+                            Margin="1"
+                            Background="{StaticResource BrushCBTextboxBackground}"
+                            BorderBrush="{StaticResource BrushCBTextboxBorderbrush}"
+                            BorderThickness="0,0,1,0"
+                            CornerRadius="2,0,0,2" />
+                        <Path
+                            x:Name="Arrow"
+                            Grid.Column="1"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Data="M 0 0 L 4 4 L 8 0 Z"
+                            Fill="{StaticResource BrushCBButtonForeground}" />
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="ToggleButton.IsMouseOver" Value="true">
@@ -71,11 +74,12 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="TextBox">
-                    <ScrollViewer x:Name="PART_ContentHost"
-                                  Background="{TemplateBinding Background}"
-                                  Focusable="false"
-                                  HorizontalScrollBarVisibility="Hidden"
-                                  VerticalScrollBarVisibility="Hidden" />
+                    <ScrollViewer
+                        x:Name="PART_ContentHost"
+                        Background="{TemplateBinding Background}"
+                        Focusable="false"
+                        HorizontalScrollBarVisibility="Hidden"
+                        VerticalScrollBarVisibility="Hidden" />
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -87,11 +91,12 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="TextBox">
-                    <ScrollViewer x:Name="PART_ContentHost"
-                                  Background="{TemplateBinding Background}"
-                                  Focusable="false"
-                                  HorizontalScrollBarVisibility="Hidden"
-                                  VerticalScrollBarVisibility="Hidden" />
+                    <ScrollViewer
+                        x:Name="PART_ContentHost"
+                        Background="{TemplateBinding Background}"
+                        Focusable="false"
+                        HorizontalScrollBarVisibility="Hidden"
+                        VerticalScrollBarVisibility="Hidden" />
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -103,9 +108,10 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ComboBoxItem">
-                    <Border Name="Border"
-                            Padding="2"
-                            SnapsToDevicePixels="true">
+                    <Border
+                        Name="Border"
+                        Padding="2"
+                        SnapsToDevicePixels="true">
                         <ContentPresenter />
                     </Border>
                     <ControlTemplate.Triggers>
@@ -134,44 +140,50 @@
             <Setter.Value>
                 <ControlTemplate TargetType="ComboBox">
                     <Grid>
-                        <ToggleButton Name="ToggleButton"
-                                      Grid.Column="2"
-                                      ClickMode="Press"
-                                      Focusable="false"
-                                      IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
-                                      Style="{StaticResource ComboBoxToggleButton}" />
-                        <ContentPresenter Name="ContentSite"
-                                          Margin="3,3,23,3"
-                                          HorizontalAlignment="Left"
-                                          VerticalAlignment="Center"
-                                          Content="{TemplateBinding SelectionBoxItem}"
-                                          ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
-                                          ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
-                                          IsHitTestVisible="False" />
-                        <TextBox x:Name="PART_EditableTextBox"
-                                 Margin="3,3,23,3"
-                                 HorizontalAlignment="Left"
-                                 VerticalAlignment="Center"
-                                 Background="{StaticResource BrushControlTransparent}"
-                                 Focusable="True"
-                                 Foreground="{TemplateBinding Foreground}"
-                                 IsReadOnly="{TemplateBinding IsReadOnly}"
-                                 Style="{StaticResource ComboBoxTextBox}"
-                                 Visibility="Hidden" />
-                        <Popup Name="Popup"
-                               AllowsTransparency="True"
-                               Focusable="False"
-                               IsOpen="{TemplateBinding IsDropDownOpen}"
-                               Placement="Bottom"
-                               PopupAnimation="Slide">
-                            <Grid Name="DropDown"
-                                  MinWidth="{TemplateBinding ActualWidth}"
-                                  MaxHeight="{TemplateBinding MaxDropDownHeight}"
-                                  SnapsToDevicePixels="True">
-                                <Border x:Name="DropDownBorder"
-                                        Background="{StaticResource BrushPopupBackgroundBright}"
-                                        BorderBrush="{StaticResource BrushPopupBorderbrushColorBright}"
-                                        BorderThickness="1" />
+                        <ToggleButton
+                            Name="ToggleButton"
+                            Grid.Column="2"
+                            ClickMode="Press"
+                            Focusable="false"
+                            IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                            Style="{StaticResource ComboBoxToggleButton}" />
+                        <ContentPresenter
+                            Name="ContentSite"
+                            Margin="3,3,23,3"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Content="{TemplateBinding SelectionBoxItem}"
+                            ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                            ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                            IsHitTestVisible="False" />
+                        <TextBox
+                            x:Name="PART_EditableTextBox"
+                            Margin="3,3,23,3"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Background="{StaticResource BrushControlTransparent}"
+                            Focusable="True"
+                            Foreground="{TemplateBinding Foreground}"
+                            IsReadOnly="{TemplateBinding IsReadOnly}"
+                            Style="{StaticResource ComboBoxTextBox}"
+                            Visibility="Hidden" />
+                        <Popup
+                            Name="Popup"
+                            AllowsTransparency="True"
+                            Focusable="False"
+                            IsOpen="{TemplateBinding IsDropDownOpen}"
+                            Placement="Bottom"
+                            PopupAnimation="Slide">
+                            <Grid
+                                Name="DropDown"
+                                MinWidth="{TemplateBinding ActualWidth}"
+                                MaxHeight="{TemplateBinding MaxDropDownHeight}"
+                                SnapsToDevicePixels="True">
+                                <Border
+                                    x:Name="DropDownBorder"
+                                    Background="{StaticResource BrushPopupBackgroundBright}"
+                                    BorderBrush="{StaticResource BrushPopupBorderbrushColorBright}"
+                                    BorderThickness="1" />
                                 <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True">
                                     <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
                                 </ScrollViewer>
@@ -211,9 +223,10 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ComboBoxItem">
-                    <Border Name="Border"
-                            Padding="2"
-                            SnapsToDevicePixels="true">
+                    <Border
+                        Name="Border"
+                        Padding="2"
+                        SnapsToDevicePixels="true">
                         <ContentPresenter />
                     </Border>
                     <ControlTemplate.Triggers>
@@ -237,44 +250,50 @@
             <Setter.Value>
                 <ControlTemplate TargetType="ComboBox">
                     <Grid>
-                        <ToggleButton Name="ToggleButton"
-                                      Grid.Column="2"
-                                      ClickMode="Press"
-                                      Focusable="false"
-                                      IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
-                                      Style="{StaticResource ComboBoxToggleButton}" />
-                        <ContentPresenter Name="ContentSite"
-                                          Margin="3,3,23,3"
-                                          HorizontalAlignment="Left"
-                                          VerticalAlignment="Center"
-                                          Content="{TemplateBinding SelectionBoxItem}"
-                                          ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
-                                          ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
-                                          IsHitTestVisible="False" />
-                        <TextBox x:Name="PART_EditableTextBox"
-                                 Margin="3,3,23,3"
-                                 HorizontalAlignment="Left"
-                                 VerticalAlignment="Center"
-                                 Background="{StaticResource BrushControlTransparent}"
-                                 Focusable="True"
-                                 Foreground="{TemplateBinding Foreground}"
-                                 IsReadOnly="{TemplateBinding IsReadOnly}"
-                                 Style="{StaticResource ComboBoxTextBoxSearch}"
-                                 Visibility="Hidden" />
-                        <Popup Name="Popup"
-                               AllowsTransparency="True"
-                               Focusable="False"
-                               IsOpen="{TemplateBinding IsDropDownOpen}"
-                               Placement="Bottom"
-                               PopupAnimation="Slide">
-                            <Grid Name="DropDown"
-                                  MinWidth="{TemplateBinding ActualWidth}"
-                                  MaxHeight="{TemplateBinding MaxDropDownHeight}"
-                                  SnapsToDevicePixels="True">
-                                <Border x:Name="DropDownBorder"
-                                        Background="{StaticResource BrushPopupBackgroundDark}"
-                                        BorderBrush="{StaticResource BrushPopupBorderbrushColor}"
-                                        BorderThickness="1" />
+                        <ToggleButton
+                            Name="ToggleButton"
+                            Grid.Column="2"
+                            ClickMode="Press"
+                            Focusable="false"
+                            IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                            Style="{StaticResource ComboBoxToggleButton}" />
+                        <ContentPresenter
+                            Name="ContentSite"
+                            Margin="3,3,23,3"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Content="{TemplateBinding SelectionBoxItem}"
+                            ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                            ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                            IsHitTestVisible="False" />
+                        <TextBox
+                            x:Name="PART_EditableTextBox"
+                            Margin="3,3,23,3"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Background="{StaticResource BrushControlTransparent}"
+                            Focusable="True"
+                            Foreground="{TemplateBinding Foreground}"
+                            IsReadOnly="{TemplateBinding IsReadOnly}"
+                            Style="{StaticResource ComboBoxTextBoxSearch}"
+                            Visibility="Hidden" />
+                        <Popup
+                            Name="Popup"
+                            AllowsTransparency="True"
+                            Focusable="False"
+                            IsOpen="{TemplateBinding IsDropDownOpen}"
+                            Placement="Bottom"
+                            PopupAnimation="Slide">
+                            <Grid
+                                Name="DropDown"
+                                MinWidth="{TemplateBinding ActualWidth}"
+                                MaxHeight="{TemplateBinding MaxDropDownHeight}"
+                                SnapsToDevicePixels="True">
+                                <Border
+                                    x:Name="DropDownBorder"
+                                    Background="{StaticResource BrushPopupBackgroundDark}"
+                                    BorderBrush="{StaticResource BrushPopupBorderbrushColor}"
+                                    BorderThickness="1" />
                                 <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True">
                                     <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
                                 </ScrollViewer>
@@ -314,9 +333,10 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ComboBoxItem">
-                    <Border Name="Border"
-                            Padding="2"
-                            SnapsToDevicePixels="true">
+                    <Border
+                        Name="Border"
+                        Padding="2"
+                        SnapsToDevicePixels="true">
                         <ContentPresenter />
                     </Border>
                     <ControlTemplate.Triggers>
@@ -341,44 +361,50 @@
             <Setter.Value>
                 <ControlTemplate TargetType="ComboBox">
                     <Grid>
-                        <ToggleButton Name="ToggleButton"
-                                      Grid.Column="2"
-                                      ClickMode="Press"
-                                      Focusable="false"
-                                      IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
-                                      Style="{StaticResource ComboBoxToggleButton}" />
-                        <ContentPresenter Name="ContentSite"
-                                          Margin="3,3,23,3"
-                                          HorizontalAlignment="Left"
-                                          VerticalAlignment="Center"
-                                          Content="{TemplateBinding SelectionBoxItem}"
-                                          ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
-                                          ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
-                                          IsHitTestVisible="False" />
-                        <TextBox x:Name="PART_EditableTextBox"
-                                 Margin="3,3,23,3"
-                                 HorizontalAlignment="Left"
-                                 VerticalAlignment="Center"
-                                 Background="{StaticResource BrushControlTransparent}"
-                                 Focusable="True"
-                                 Foreground="{TemplateBinding Foreground}"
-                                 IsReadOnly="{TemplateBinding IsReadOnly}"
-                                 Style="{StaticResource ComboBoxTextBox}"
-                                 Visibility="Hidden" />
-                        <Popup Name="Popup"
-                               AllowsTransparency="True"
-                               Focusable="False"
-                               IsOpen="{TemplateBinding IsDropDownOpen}"
-                               Placement="Bottom"
-                               PopupAnimation="Slide">
-                            <Grid Name="DropDown"
-                                  MinWidth="{TemplateBinding ActualWidth}"
-                                  MaxHeight="{TemplateBinding MaxDropDownHeight}"
-                                  SnapsToDevicePixels="True">
-                                <Border x:Name="DropDownBorder"
-                                        Background="{StaticResource BrushPopupBackgroundDark}"
-                                        BorderBrush="{StaticResource BrushPopupBorderbrushColor}"
-                                        BorderThickness="1" />
+                        <ToggleButton
+                            Name="ToggleButton"
+                            Grid.Column="2"
+                            ClickMode="Press"
+                            Focusable="false"
+                            IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                            Style="{StaticResource ComboBoxToggleButton}" />
+                        <ContentPresenter
+                            Name="ContentSite"
+                            Margin="3,3,23,3"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Content="{TemplateBinding SelectionBoxItem}"
+                            ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                            ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                            IsHitTestVisible="False" />
+                        <TextBox
+                            x:Name="PART_EditableTextBox"
+                            Margin="3,3,23,3"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Background="{StaticResource BrushControlTransparent}"
+                            Focusable="True"
+                            Foreground="{TemplateBinding Foreground}"
+                            IsReadOnly="{TemplateBinding IsReadOnly}"
+                            Style="{StaticResource ComboBoxTextBox}"
+                            Visibility="Hidden" />
+                        <Popup
+                            Name="Popup"
+                            AllowsTransparency="True"
+                            Focusable="False"
+                            IsOpen="{TemplateBinding IsDropDownOpen}"
+                            Placement="Bottom"
+                            PopupAnimation="Slide">
+                            <Grid
+                                Name="DropDown"
+                                MinWidth="{TemplateBinding ActualWidth}"
+                                MaxHeight="{TemplateBinding MaxDropDownHeight}"
+                                SnapsToDevicePixels="True">
+                                <Border
+                                    x:Name="DropDownBorder"
+                                    Background="{StaticResource BrushPopupBackgroundDark}"
+                                    BorderBrush="{StaticResource BrushPopupBorderbrushColor}"
+                                    BorderThickness="1" />
                                 <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True">
                                     <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
                                 </ScrollViewer>

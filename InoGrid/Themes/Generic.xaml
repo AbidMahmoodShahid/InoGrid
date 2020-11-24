@@ -15,6 +15,9 @@
         <Setter Property="Background" Value="{StaticResource BrushBaseBright}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="BorderBrush" Value="{StaticResource BrushAccentDark}" />
+        <Setter Property="ItemHeightType" Value="AutoItemHeight" />
+        <Setter Property="ItemMargin" Value="0" />
+        <Setter Property="Columns" Value="1" />
 
         <Setter Property="Template">
             <Setter.Value>
@@ -23,10 +26,10 @@
                             VerticalAlignment="{TemplateBinding VerticalAlignment}"
                             Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}">
+                            BorderThickness="{Binding Path=BorderThickness, RelativeSource={RelativeSource TemplatedParent}}">
                         <ScrollViewer VerticalScrollBarVisibility="Auto">
                             <Grid>
-                                <ItemsPresenter />
+                                <ItemsPresenter/>
                             </Grid>
                         </ScrollViewer>
                     </Border>
@@ -37,7 +40,10 @@
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>
-                    <local:InoGridPanel />
+                    <local:InoGridPanel ChildMargin="{Binding ItemMargin, RelativeSource={RelativeSource AncestorType=local:InoGrid}}"
+                                        ChildHeightType="{Binding ItemHeightType, RelativeSource={RelativeSource AncestorType=local:InoGrid}}"
+                                        Columns="{Binding Columns, RelativeSource={RelativeSource AncestorType=local:InoGrid}}">
+                    </local:InoGridPanel>
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>

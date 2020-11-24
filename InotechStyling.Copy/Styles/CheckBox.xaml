@@ -12,10 +12,11 @@
             <Setter.Value>
                 <ControlTemplate>
                     <Border>
-                        <Rectangle Margin="15,0,0,0"
-                                   Stroke="{StaticResource ColorButtonStroke}"
-                                   StrokeDashArray="1 2"
-                                   StrokeThickness="1" />
+                        <Rectangle
+                            Margin="15,0,0,0"
+                            Stroke="{StaticResource ColorButtonStroke}"
+                            StrokeDashArray="1 2"
+                            StrokeThickness="1" />
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
@@ -36,54 +37,61 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="CheckBox">
-                    <Border Padding="{TemplateBinding Padding}"
-                            Background="{TemplateBinding Background}"
-                            BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}">
+                    <Border
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
                         <BulletDecorator Background="{StaticResource BrushControlTransparent}">
                             <BulletDecorator.Bullet>
                                 <Grid Width="13" Height="13">
-                                    <Border x:Name="Border"
-                                            Background="{StaticResource BrushSelectionControlsBackground}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="1"
-                                            CornerRadius="0" />
+                                    <Border
+                                        x:Name="Border"
+                                        Background="{StaticResource BrushSelectionControlsBackground}"
+                                        BorderBrush="{TemplateBinding BorderBrush}"
+                                        BorderThickness="1"
+                                        CornerRadius="0" />
 
-                                    <Border x:Name="MouseOverOverlay"
-                                            Background="{StaticResource BrushSelectionControlsMouseOverBackground}"
-                                            BorderBrush="{StaticResource BrushSelectionControlsMouseOverBorderbrush}"
-                                            BorderThickness="1"
-                                            CornerRadius="0"
-                                            Opacity="0.0" />
+                                    <Border
+                                        x:Name="MouseOverOverlay"
+                                        Background="{StaticResource BrushSelectionControlsMouseOverBackground}"
+                                        BorderBrush="{StaticResource BrushSelectionControlsMouseOverBorderbrush}"
+                                        BorderThickness="1"
+                                        CornerRadius="0"
+                                        Opacity="0.0" />
 
-                                    <Border x:Name="PressedOverlay"
-                                            Background="{StaticResource BrushSelectionControlsClickedBackground}"
-                                            BorderBrush="{StaticResource BrushSelectionControlsClickedBorderbrush}"
-                                            BorderThickness="1"
-                                            CornerRadius="0"
-                                            Opacity="0.0" />
+                                    <Border
+                                        x:Name="PressedOverlay"
+                                        Background="{StaticResource BrushSelectionControlsClickedBackground}"
+                                        BorderBrush="{StaticResource BrushSelectionControlsClickedBorderbrush}"
+                                        BorderThickness="1"
+                                        CornerRadius="0"
+                                        Opacity="0.0" />
 
-                                    <Border x:Name="DisabledOverlay"
-                                            Background="{StaticResource BrushSelectionControlsDisabledBackground}"
-                                            BorderBrush="{StaticResource BrushSelectionControlsDisabledBorderbrush}"
-                                            BorderThickness="1"
-                                            CornerRadius="0"
-                                            Opacity="0.0" />
+                                    <Border
+                                        x:Name="DisabledOverlay"
+                                        Background="{StaticResource BrushSelectionControlsDisabledBackground}"
+                                        BorderBrush="{StaticResource BrushSelectionControlsDisabledBorderbrush}"
+                                        BorderThickness="1"
+                                        CornerRadius="0"
+                                        Opacity="0.0" />
 
-                                    <Path x:Name="CheckMark"
-                                          Width="7"
-                                          Height="7"
-                                          Data="M 0 0 L 7 7 M 0 7 L 7 0"
-                                          SnapsToDevicePixels="False"
-                                          Stroke="{StaticResource BrushSelectionControlsForeground}"
-                                          StrokeThickness="2"
-                                          Visibility="Collapsed" />
+                                    <Path
+                                        x:Name="CheckMark"
+                                        Width="7"
+                                        Height="7"
+                                        Data="M 0 0 L 7 7 M 0 7 L 7 0"
+                                        SnapsToDevicePixels="False"
+                                        Stroke="{StaticResource BrushSelectionControlsForeground}"
+                                        StrokeThickness="2"
+                                        Visibility="Collapsed" />
                                 </Grid>
                             </BulletDecorator.Bullet>
-                            <ContentPresenter Margin="4,0,0,0"
-                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                              RecognizesAccessKey="True" />
+                            <ContentPresenter
+                                Margin="4,0,0,0"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                RecognizesAccessKey="True" />
                         </BulletDecorator>
 
                         <VisualStateManager.VisualStateGroups>

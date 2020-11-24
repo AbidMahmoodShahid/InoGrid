@@ -46,10 +46,50 @@ namespace InoGrid
     /// </summary>
     public class InoGrid : ItemsControl
     {
-        static InoGrid()  
+        #region Constructors
+
+        static InoGrid()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(InoGrid), new FrameworkPropertyMetadata(typeof(InoGrid)));
         }
+
+        #endregion
+
+
+        #region Dependancy Property
+
+        public int ItemMargin
+        {
+            get { return (int)GetValue(ItemMarginProperty); }
+            set { SetValue(ItemMarginProperty, value); }
+        }
+
+        public static readonly DependencyProperty ItemMarginProperty = DependencyProperty.Register(nameof(ItemMargin), typeof(int), typeof(InoGrid), new FrameworkPropertyMetadata(1));
+
+
+        public int Columns
+        {
+            get { return (int)GetValue(ColumnsProperty); }
+            set { SetValue(ColumnsProperty, value); }
+        }
+
+        public static readonly DependencyProperty ColumnsProperty = DependencyProperty.Register(nameof(Columns), typeof(int), typeof(InoGrid), new FrameworkPropertyMetadata(1));
+
+
+
+        public ItemHeightType ItemHeightType
+        {
+            get { return (ItemHeightType)GetValue(ItemHeightTypeProperty); }
+            set { SetValue(ItemHeightTypeProperty, value); }
+        }
+       
+        public static readonly DependencyProperty ItemHeightTypeProperty = DependencyProperty.Register(nameof(ItemHeightType), typeof(ItemHeightType), typeof(InoGrid), new FrameworkPropertyMetadata(ItemHeightType.AutoItemHeight));
+
+        #endregion
+
+
+
+
 
     }
 }

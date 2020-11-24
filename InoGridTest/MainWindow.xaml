@@ -14,6 +14,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+
         </Grid.RowDefinitions>
 
         <Label Grid.Row="0"
@@ -23,15 +24,14 @@
                Content="Beispiel von InoGrid mit PS8 Styling"
                FontSize="18" />
 
-        <IG:InoGrid Grid.Row="1" Margin="10">
+        <IG:InoGrid Grid.Row="1" Margin="10"><!--ItemMargin="0" ItemHeightType="AutoItemHeight"-->
 
             <Label Content="Testing Row One" />
             <TextBox Text="Column One" />
             <Label Content="Testing Row Two" />
             <TextBox Text="Column Two" />
             <Label Content="Testing Row Three" />
-            <TextBox Text="Column One" /> 
-            <!--  Width="100" Height="100" VerticalContentAlignment="Center" HorizontalAlignment="Left"  -->
+            <TextBox Text="Column One" />
             <Label Content="Testing Row Four" />
             <TextBox Text="Column Two" />
             <Label Content="Testing Row Four" />
@@ -56,8 +56,6 @@
             </IG:InoGridItem>-->
 
         </IG:InoGrid>
-
-
 
     </Grid>
 </Window>
